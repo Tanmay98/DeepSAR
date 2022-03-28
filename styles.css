@@ -3,3 +3,9 @@ body{
     background-color: pink;
     text-align: center;
 }
+
+h2{
+    color: red;
+    text-indent: 30px;
+    text-transform: uppercase;
+}
