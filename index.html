@@ -9,6 +9,39 @@
 </head>
 <body>
     <h1>DeepSAR: Vessel Detection in SAR Imagery With Noisy Labels</h1>
-    <h2>Abstract</h2>
+    <!-- <div class="row">
+        <div class="column">
+            <img src="1.png" alt="Trulli" width="250" height="250">
+            <img src="1true.png" alt="Trulli" width="250" height="250">
+        </div>
+        <div class="column">
+            <img src="1prop.png" alt="Trulli" width="250" height="250">
+            <img src="1pred.png" alt="Trulli" width="250" height="250">
+        </div>
+
+        <figcaption>
+            Maritime object detection from xView3 data. (a) Input SAR} image in pseudo color RGB. (b) Ground truth segmentation map {red: non-vessel, green: fishing vessel, blue: non-fishing vessel}. (c) Foreground-Background and (d) Vessel Class 
+            segmentation map predicted by our method.
+        </figcaption>
+    </div> -->
+
+    <img src="full-arch1.jpg" alt="Trulli" width="1000" height="400">
+    <figcaption>
+        Our proposed training pipeline. The input SAR image bands are converted to false-color RGB, and then the FPN architecture is used to extract multi-resolution features combined using the Upsampling Stage to create high-resolution 
+        128-dimensional pixel-level feature vectors. The extracted features are then used to predict foreground regions using a Foreground-Background (FB) classifier head (class-agnostic detector). Finally, the predicted foreground regions 
+        and feature vectors are used to predict the semantic segmentation map using a Semantic Segmentation (SS) head.
+    </figcaption>
+
+    <h2>    Abstract</h2>
+    <p>
+        Unlike traditional optoelectronic satellite imaging, Synthetic Aperture Radar (SAR) allows remote sensing applications to operate under all weather conditions. This makes it uniquely valuable for detecting ships/vessels involved in 
+        illegal, unreported, and unregulated (IUU) fishing. While recent work has shown significant improvement in this domain, detecting small objects using noisy point annotations remains an unexplored area. In order to meet the unique challenges 
+        of this problem, we propose a progressive training methodology that utilizes two different spatial sampling strategies. Firstly, we use stochastic sampling of background points to reduce the impact of class imbalance and missing labels, and 
+        secondly, during the refinement stage, we use hard negative sampling to improve the model. Experimental results on the challenging xView3 dataset show that our method outperforms conventional small object localization methods in a large, noisy 
+        dataset of SAR images.
+
+    </p>
+
+    <h2>    Performance</h2>
 </body>
 </html>

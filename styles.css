@@ -1,11 +1,54 @@
 body{
     margin: 0;
     background-color: pink;
+    /* text-align: center; */
+}
+
+
+h1{
+    color: red;
+    text-indent: 30px;
+    text-transform: uppercase;
     text-align: center;
 }
 
 h2{
-    color: red;
-    text-indent: 30px;
-    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 100px;
+
 }
+
+p{
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+img{
+    padding-top: 10px;
+    padding-left: 400px;
+    padding-right: 10px;
+}
+
+figcaption{
+    padding-top: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-left: 500px;
+}
+
+.column{
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+} */
