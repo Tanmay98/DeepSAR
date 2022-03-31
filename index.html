@@ -9,21 +9,6 @@
 </head>
 <body>
     <h1>DeepSAR: Vessel Detection in SAR Imagery With Noisy Labels</h1>
-    <!-- <div class="row">
-        <div class="column">
-            <img src="1.png" alt="Trulli" width="250" height="250">
-            <img src="1true.png" alt="Trulli" width="250" height="250">
-        </div>
-        <div class="column">
-            <img src="1prop.png" alt="Trulli" width="250" height="250">
-            <img src="1pred.png" alt="Trulli" width="250" height="250">
-        </div>
-
-        <figcaption>
-            Maritime object detection from xView3 data. (a) Input SAR} image in pseudo color RGB. (b) Ground truth segmentation map {red: non-vessel, green: fishing vessel, blue: non-fishing vessel}. (c) Foreground-Background and (d) Vessel Class 
-            segmentation map predicted by our method.
-        </figcaption>
-    </div> -->
 
     <img src="full-arch1.jpg" alt="Trulli" width="1000" height="400">
     <figcaption>
@@ -43,5 +28,52 @@
     </p>
 
     <h2>    Performance</h2>
+    <img src="score.JPG" alt="Trullii" width="800" height="150">
+    <figcaption>
+        Comparison of our approach with state-of-the-art methods for small object localization and generic object localization on the validation split of the xView3 dataset.
+        F1<sub>D</sub>: Detection F1, F1<sub>S</sub>: Close-to-Shore Detection F1, F1<sub>V</sub>: Vessel Classification F1, F1<sub>C</sub>: Fishing Classification F1). <br> <sup>[G]</sup> : Generic method not adapted for small objects
+    </figcaption>
+
+    <h2>    Visualization</h2>
+    
+    <div class="row">
+        <div class="column">
+            <img src="quant_input.png" alt="Trulli" style="width: 100%">
+            <figcaption>    Input Scene     </figcaption>
+        </div>
+        <div class="column">
+            <img src="quant_true.png" alt="b" style="width: 100%">
+            <figcaption>    Ground Truth    </figcaption>
+        </div>
+        <div class="column">
+            <img src="quant_ours.png" alt="v" style="width: 100%">
+            <figcaption>    DeepSAR(Ours)   </figcaption>
+        </div>
+        <div class="column">
+            <img src="quant_farseg_1.png" alt="f" style="width: 100%">
+            <figcaption>    FarSeg      </figcaption>
+        </div>
+        <div class="column">
+            <img src="quant_psp_1.png" alt="d" style="width: 100%">
+            <figcaption>    PSPNet      </figcaption>
+        </div>
+        <div class="column">
+            <img src="quant_factseg_1.png" alt="r" style="width: 100%">
+            <figcaption>    FactSeg     </figcaption>
+        </div>
+
+        <!-- <figcaption>
+            Maritime object detection from xView3 data. (a) Input SAR} image in pseudo color RGB. (b) Ground truth segmentation map {red: non-vessel, green: fishing vessel, blue: non-fishing vessel}. (c) Foreground-Background and (d) Vessel Class 
+            segmentation map predicted by our method.
+        </figcaption> -->
+
+    </div>
+    <figcaption>
+        Qualitative comparison of our approach with other methods for small object localization on the validation split of xView3 dataset. (red: non-vessel, green: fishing vessel, 
+        blue: {non-fishing vessel). Red circles represent false detections or misclassifications by the model.
+    </figcaption>
+
+    <h2>    Reference</h2>
+    <p></p>
 </body>
 </html>
